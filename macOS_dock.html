@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>macOS-dock</title>
+      <style>
+html{
+        margin: 0;
+    	height: 100%;
+}
+body{
+  	background-image: url("wa.jpg");
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	margin: 0;
+    	height: 100%;
+      }
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 64px;
+    height: 64px;
+    -webkit-transition: all 0.3s;
+    -webkit-transform-origin: 50% 100%;
+}
+li:hover img {
+    -webkit-transform: scale(2);
+    margin: 0 2em;
+}
+li {
+    display: inline-block;
+    cursor: pointer;
+}
+
+#dock-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#dock{
+  width: fit-content;
+  height: fit-content;
+  background-color: rgba(199, 199, 199, .5);
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  margin-bottom:10px;
+}
+
+      </style>
+   </head>
+   <body>
+   <div id="dock-container">
+  <div id="dock">
+  <ul>
+    <li><img src="1.png"/></li>
+    <li><img src="2.png"/></li>
+    <li><img src="3.png"/></li>
+    <li><img src="4.png"/></li>
+    <li><img src="5.png"/></li>
+    <li><img src="6.png"/></li>
+    <li><img src="7.png"/></li>
+    <li><img src="8.png"/></li>
+    <li><img src="9.png"/></li>
+  </ul>
+  </div>
+</div>
+<script>
+</script>
+   </body>
+</html>
+
